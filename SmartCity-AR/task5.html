@@ -7,7 +7,7 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-				<video id="video" src="assets/video.mp4" response-type="arraybuffer" autoplay="true" loop></video>
+				<video id="penguin-sledding" autoplay loop="true" src="penguin-sledding.mp4"></video>
             </a-assets>
 
             <!-- handle hiro marker -->
@@ -23,8 +23,7 @@
                 </a-entity>
 
                 <!-- second entity: reference to the above video -->
-				<a-video video="src: #video; volume: 1; loop: true">
-				</a-video>
+				<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
